@@ -1,0 +1,121 @@
+.section__revuev {
+    background: #fff;
+
+    &:after{
+        position: absolute;
+        content: url("../img/revuev/straw.png");
+        position: absolute;
+        top: 47px;
+        right: 18px;
+    }
+    &:before{
+        position: absolute;
+        content:url("../img/revuev/uzorrevu.svg");
+        left: 0;
+        bottom: -60px;
+       
+
+    }
+}
+
+.container__revuev {
+    position: relative;
+
+    &:after{
+        position: absolute;
+        content: url('../img/revuev/yagoda21.svg');
+        right: 0;
+        bottom: 35%;
+    }
+    // &:after{
+    //     position: absolute;
+    //     content: url("../img/revuev/yagoda2.png");
+    //     left: -25%;
+    //     bottom: -60px;
+    // }
+
+}
+
+// .rev-yaga{
+//     background: url('../img/revuev/yagoda21.svg') center no-repeat;
+//     width: 18%;
+// }
+
+.title--rev{
+    text-align: center;
+    margin-top: 62px;
+    margin-bottom: 32px;
+}
+
+.block-rev {
+    display: flex;
+   
+    background: #f8faf9;
+    padding: 42px;
+}
+.rev-img {
+    display: block;
+    height: auto;
+    max-width: 253px;
+    margin-right: 40px;
+}
+.rev-text {
+    font-family: "Alegreya Sans";
+    width: 47%;
+    padding-right: 5px;
+}
+.rev-text__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 12px;
+}
+.rev-text__subtile {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+.rev-text__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.rev__block-img {
+    display: block;
+    margin-top: 15px;
+
+
+}
+.rev__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rev__item {
+    // height: 74px;
+    width: 74px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+    
+    &:hover{
+        border:4px solid $darkGreen;
+    }
+
+    img{
+        border-radius: 50%;
+    }
+}

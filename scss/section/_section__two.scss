@@ -1,0 +1,98 @@
+.section__two {
+    background: #fff;
+    height: 100vh;
+
+    &:after{
+        position: absolute;
+        content: url("../img/two/malina.png");
+        bottom: -120px;
+        left: 0;
+        z-index: 10;
+    }
+    &:before{
+        position: absolute;
+        content: url("../img/two/liav.svg");
+        left: 0;
+        top: 30%;
+    }
+}
+.container--two {
+    // border: 1px solid red;
+    // justify-content: space-around;
+    padding-top: 102px;
+}
+
+.block-title {
+    // position: relative;
+    top: 102px;
+    // border:1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 49px;
+
+}
+.title {
+    text-transform: uppercase;
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    padding-bottom: 19px;
+}
+.subtitle {
+    width: 47%;
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #666666;
+
+    text-align: center;
+
+    span {
+        text-align: center;
+    }
+}
+// .block-promo {
+    // border: 1px solid yellow;
+// }
+.list__promo {
+    display: flex;
+    // border: 1px solid rgb(25, 149, 100);
+}
+.item__promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promo__img {
+    width: 128px;
+    height: 128px;
+    background: #f2f5f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.promo__title {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color: #292929;
+    margin-bottom: 27px;
+}
+.promo__subtitle p {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #666666;
+    text-align: center;
+}

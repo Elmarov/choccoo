@@ -1,0 +1,100 @@
+.section__one {
+    background:
+        url("../img/one/узор 1.png") right bottom no-repeat;
+
+    background-color: #61c4d9;
+    height: 100vh;
+    min-height: 650px;
+
+    &:before{
+        position: absolute;
+        display: block;
+        content: url('../img/one/Лист 3.png');
+        bottom: -40px;
+        left: 3%;
+        z-index: 10;
+    }
+    &:after{
+        position: absolute;
+        content: url('../img/one/comp.png');
+        bottom: -40px;
+        right: 0;
+        z-index: 11;
+    }
+}
+.header {
+    // border:1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+    // padding-top: 28px;
+}
+// nav {
+//     width: 100%;
+// }
+.nav__list {
+    // border: 1px solid pink;
+    width: 100%;
+    display: flex;
+    // justify-content: space-around;
+}
+.nav__item{
+margin-right: 27px;
+&:last-child{
+    margin-right: 0;
+}
+}
+
+.header__phone a{
+    display: flex;
+}
+.container--one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px 0 50px;
+    background: url("../img/one/Батончики.png") right center /50% auto no-repeat;;
+}
+
+.one__title {
+    color: wheat;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    width: 46%;
+    // border: 1px solid pink;
+    margin-top: 84px;
+    margin-bottom: 64px;
+}
+.one__main-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.one__dest-title {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.one__icon {
+    width: 50%;
+    // border: 1px solid pink;
+}
+
+.icon__list {
+    display: flex;
+    color: wheat;
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+.icon__item {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+.icon-block{
+    margin-right: 11px;
+width: 45px;
+}
