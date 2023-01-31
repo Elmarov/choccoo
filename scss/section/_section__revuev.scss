@@ -1,29 +1,27 @@
 .section__revuev {
     background: #fff;
 
-    &:after{
+    &:after {
         position: absolute;
         content: url("../img/revuev/straw.png");
         position: absolute;
         top: 47px;
         right: 18px;
     }
-    &:before{
+    &:before {
         position: absolute;
-        content:url("../img/revuev/uzorrevu.svg");
+        content: url("../img/revuev/uzorrevu.svg");
         left: 0;
-        bottom: -60px;
-       
-
+        bottom: -170px;
     }
 }
 
 .container__revuev {
     position: relative;
 
-    &:after{
+    &:after {
         position: absolute;
-        content: url('../img/revuev/yagoda21.svg');
+        content: url("../img/revuev/yagoda21.svg");
         right: 0;
         bottom: 35%;
     }
@@ -33,7 +31,6 @@
     //     left: -25%;
     //     bottom: -60px;
     // }
-
 }
 
 // .rev-yaga{
@@ -41,17 +38,31 @@
 //     width: 18%;
 // }
 
-.title--rev{
+.title--rev {
     text-align: center;
     margin-top: 62px;
     margin-bottom: 32px;
 }
 
 .block-rev {
+    position: relative;
     display: flex;
-   
+
     background: #f8faf9;
     padding: 42px;
+    overflow:hidden;
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        height: 90px;
+        width: 90px;
+        background: #fff;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -65px;
+    }
 }
 .rev-img {
     display: block;
@@ -89,8 +100,6 @@
 .rev__block-img {
     display: block;
     margin-top: 15px;
-
-
 }
 .rev__list {
     display: flex;
@@ -107,15 +116,15 @@
     align-items: center;
     margin-right: 6px;
 
-    &:last-child{
+    &:last-child {
         margin-right: 0;
     }
-    
-    &:hover{
-        border:4px solid $darkGreen;
+
+    &:hover {
+        border: 4px solid $darkGreen;
     }
 
-    img{
+    img {
         border-radius: 50%;
     }
 }

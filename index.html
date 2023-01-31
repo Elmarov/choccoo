@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,7 +20,10 @@
                     <header class="header">
 
                         <div class="header__logo">
-                            <img src="img/one/Лого.svg" alt="logo" class="logo">
+
+                            <svg class="logo-icon">
+                                <use xlink:href="img/sprit.svg#logo" />
+                            </svg>
                         </div>
 
                         <nav class="nav">
@@ -40,10 +43,18 @@
                         <div class="header__phone">
                             <a href="tel:88009039090">
                                 <span class="phone-icon">
-                                    <img src="img/one/phon.png" alt="phone">
+
+                                    <svg class="phone-icon">
+                                        <use xlink:href="img/sprit.svg#phone" />
+                                    </svg>
                                 </span>
                                 <span class="phone-number">88009039090</span>
                             </a>
+                        </div>
+                        <div class="burger-menu">
+                            <span class="burger-menu__item"></span>
+                            <span class="burger-menu__item"></span>
+                            <span class="burger-menu__item"></span>
                         </div>
 
                     </header>
@@ -58,7 +69,10 @@
                         <ul class="icon__list">
                             <li class="icon__item">
                                 <div class="icon-block">
-                                    <img src="img/one/one-2.svg" alt="">
+
+                                    <svg class="one-icon">
+                                        <use xlink:href="img/sprit.svg#one-2" />
+                                    </svg>
                                 </div>
                                 <div class="icon-text">
                                     100% натуральный продукт
@@ -66,15 +80,21 @@
                             </li>
                             <li class="icon__item">
                                 <div class="icon-block">
-                                    <img src="img/one/one-3.svg" alt="">
+
+                                    <svg class="one-icon">
+                                        <use xlink:href="img/sprit.svg#one-3" />
+                                    </svg>
                                 </div>
                                 <div class="icon-text">
-                                    3-5 днейдоставка по РФ
+                                    3-5 дней доставка по РФ
                                 </div>
                             </li>
                             <li class="icon__item">
                                 <div class="icon-block">
-                                    <img src="img/one/one-1.svg" alt="">
+
+                                    <svg class="one-icon">
+                                        <use xlink:href="img/sprit.svg#one-1" />
+                                    </svg>
                                 </div>
                                 <div class="icon-text">
                                     Не портит фигуру
@@ -85,8 +105,9 @@
 
                 </div>
 
-            </section>
 
+            </section>
+            <!-- ================================ Two================================= -->
             <section class="section section__two">
                 <div class="container container--two">
                     <div class="block-title">
@@ -103,37 +124,62 @@
                         <ul class="list__promo">
                             <li class="item__promo">
                                 <div class="promo__img">
-                                    <img src="img/two/pipl.svg" alt="pipl">
+
+
+                                    <svg class="two-icon two-icon__pipl ">
+                                        <use xlink:href="img/sprit.svg#pipl" />
+                                    </svg>
                                 </div>
-                                <div class="promo__title">
-                                    Полезно
+                                <div class="promo-text">
+                                    <div class="promo__title">
+                                        Полезно
+                                    </div>
+                                    <div class="promo__subtitle">
+                                        <p>Натуральность - ключевое качествонашей продукции. Мы используемтолько
+                                            природные
+                                            ингредиенты.</p>
+                                    </div>
+
                                 </div>
-                                <div class="promo__subtitle">
-                                    <p>Натуральность - ключевое качествонашей продукции. Мы используемтолько природные
-                                        ингредиенты.</p>
-                                </div>
+
                             </li>
                             <li class="item__promo">
                                 <div class="promo__img">
-                                    <img src="img/two/smail.svg" alt="smail">
+
+                                    <svg class="two-icon two-icon__smail ">
+                                        <use xlink:href="img/sprit.svg#smail" />
+                                    </svg>
                                 </div>
-                                <div class="promo__title">Вкусно</div>
-                                <div class="promo__subtitle">
-                                    <p>
-                                        Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших
-                                        батончиков.
-                                    </p>
+
+                                <div class="promo-text">
+                                    <div class="promo__title">Вкусно</div>
+                                    <div class="promo__subtitle">
+                                        <p>
+                                            Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества
+                                            наших
+                                            батончиков.
+                                        </p>
+                                    </div>
+
                                 </div>
+
                             </li>
                             <li class="item__promo">
                                 <div class="promo__img">
-                                    <img src="img/two/hand.svg" alt="hand">
+
+                                    <svg class="two-icon two-icon__hand ">
+                                        <use xlink:href="img/sprit.svg#hand" />
+                                    </svg>
                                 </div>
-                                <div class="promo__title">Питательно</div>
-                                <div class="promo__subtitle">
-                                    <p>Высокое содержание качественного белка, а также всех необходимых витаминов и
-                                        минералов.</p>
+                                <div class="promo-text">
+                                    <div class="promo__title">Питательно</div>
+                                    <div class="promo__subtitle">
+                                        <p>Высокое содержание качественного белка, а также всех необходимых витаминов и
+                                            минералов.</p>
+                                    </div>
+
                                 </div>
+
                             </li>
                         </ul>
                     </div>
@@ -147,22 +193,85 @@
                 <div class="container container__slider">
 
                     <div class="block-arrow block-arrow__left">
+
                         <div class="block-arrow__img">
-                            <img src="../img/slider/arrow-left.svg" alt="left">
+
+                            <svg class="arrow arow__left">
+                                <use xlink:href="img/sprit.svg#arrow-left" />
+                            </svg>
                         </div>
+
                     </div>
 
                     <div class="block-content__slider">
+                        <img src="img/slider/leaf-bar2.png" alt="leaf" class="leaf leaf1">
+
                         <div class="block__slider">
-                            <img src="../img/slider/bar1.png" alt="choco">
+                            <img src="img/slider/bar1.png" alt="choco">
                         </div>
-                        
+                        <img src="img/slider/leaf-bar1.png" alt="leaf" class="leaf leaf2">
                         <div class="block__slider-text">
                             <div class="slider-text__composition">
                                 <div class="box__icon">
-                                    <img src="" alt="">
+
+                                    <svg class="bar-icon">
+                                        <use xlink:href="img/sprit.svg#bar-icon" />
+                                    </svg>
                                     <span>Состав</span>
                                 </div>
+                                <ul class="composition-list">
+                                    <li class="composition-item">
+
+                                        <svg class="composition__icon">
+                                            <use xlink:href="img/sprit.svg#grape" />
+                                        </svg>
+                                        <span class="composition__title">
+                                            Виноград</span>
+                                        <span class="composition__weight">25 г</span>
+                                    </li>
+                                    <li class="composition-item">
+
+                                        <svg class="composition__icon">
+                                            <use xlink:href="img/sprit.svg#nut" />
+                                        </svg>
+                                        <span class="composition__title">Грецкий
+                                            орех</span><span class="composition__weight">32 г</span>
+                                    </li>
+                                    <li class="composition-item">
+
+                                        <svg class="composition__icon">
+                                            <use xlink:href="img/sprit.svg#almond" />
+                                        </svg>
+                                        <span class="composition__title">Кунжутное
+                                            семя</span><span class="composition__weight">20 г</span>
+                                    </li>
+                                    <li class="composition-item">
+
+                                        <svg class="composition__icon">
+                                            <use xlink:href="img/sprit.svg#powder" />
+                                        </svg>
+                                        <span class="composition__title">Сухое молоко</span><span
+                                            class="composition__weight">10 г</span>
+                                    </li>
+                                    <li class="composition-item">
+
+                                        <svg class="composition__icon">
+                                            <use xlink:href="img/sprit.svg#apitherapy" />
+                                        </svg>
+                                        <span class="composition__title">Зам.
+                                            сахара</span><span class="composition__weight">4 г</span>
+                                    </li>
+                                    <li class="composition-item">
+
+                                        <svg class="composition__icon">
+                                            <use xlink:href="img/sprit.svg#beans" />
+                                        </svg>
+                                        <span class="composition__title">Какао
+                                            бобы</span>
+                                        <span class="composition__weight">4 г</span>
+                                    </li>
+                                </ul>
+
                             </div>
                             <div class="slider-text__title">
                                 Батончик “Гранола виноград”
@@ -173,14 +282,21 @@
                                     сухое молоко, заменитель сахара и какао бобы.
                                 </div>
                                 <div class="box-caloric">
-                                    <div class="box-caloric__calor">Калорийность 110 ккал</div>
-                                    <div class="box-caloric__mas">Вес 95 грамм</div>
+                                    <div class="box-caloric__calor">
+                                        <span>Калорийность </span>
+                                        <span><b>110 ккал </b> </span>
+                                    </div>
+                                    <div class="box-caloric__mas">
+                                        <span>Вес </span>
+                                        <span>
+                                            <b> 95 грамм</b> </span>
+                                    </div>
                                 </div>
 
                                 <div class="box-price">
-                                    <div class="box-price__sum">140 р</div>
+                                    <div class="box-price__sum">140 &#8381</div>
                                     <div class="box-price__btn">
-                                        <button class="btn btn__slider">заказать</button>
+                                        <button class="btn btn__slider--green">заказать</button>
                                     </div>
                                 </div>
                             </div>
@@ -190,15 +306,152 @@
 
                     <div class="block-arrow block-arrow__right">
                         <div class="block-arrow__img">
-                            <img src="../img/slider/arrow-right.svg" alt="right">
+
+                            <svg class="arrow arow__right">
+                                <use xlink:href="img/sprit.svg#arrow-right" />
+                            </svg>
                         </div>
                     </div>
 
                 </div>
             </section>
+            <section class="section section__collective">
+                <div class="container container__collective">
+                    <div class="title title--collective">
+                        <h2>команда</h2>
+                    </div>
+                    <div class="blocks-avotar">
+                        <ul class="list-avotar">
+                            <li class="list-avotar__item">
+                                <div class="block-avotar"><img src="img/collective/avotar-1.png" alt="Борис"></div>
+                                <div class="block-avotar__text">
+                                    <div class="avotar-name">Борис Федорович</div>
+                                    <div class="avotar__box-text">
+                                        <div class="avotar-title">Оператор</div>
+                                        <div class="avotar-subtitle">
+                                            <p>С радостью поможет подобрать батончики и оформить заказ. </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="list-avotar__item">
+                                <div class="block-avotar"><img src="img/collective/avotar-2.png" alt="Алла"></div>
+                                <div class="block-avotar__text">
+                                    <div class="avotar-name">Алла Иванова</div>
+                                    <div class="avotar__box-text">
+                                        <div class="avotar-title">Оператор</div>
+                                        <div class="avotar-subtitle">
+                                            <p>С радостью поможет подобрать батончики и оформить заказ. </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="list-avotar__item">
+                                <div class="block-avotar"><img src="img/collective/avotar-3.png" alt="Кирил"></div>
+                                <div class="block-avotar__text">
+                                    <div class="avotar-name">Кирилл Матросов</div>
+                                    <div class="avotar__box-text">
+                                        <div class="avotar-title">Оператор</div>
+                                        <div class="avotar-subtitle">
+                                            <p>С радостью поможет подобрать батончики и оформить заказ. </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="list-avotar__item list-avotar__item--activ">
+                                <div class="block-avotar"><img src="img/collective/avotar-4.png" alt="Милана"></div>
+                                <div class="block-avotar__text">
+                                    <div class="avotar-name">Мила Рыжкова</div>
+
+                                    <div class="avotar__box-text">
+
+                                        <div class="avotar-title">Оператор</div>
+                                        <div class="avotar-subtitle">
+                                            <p>С радостью поможет подобрать батончики и оформить заказ. </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+
+                    <!-- <div class="block-collectiv__img block-collectiv__img--uzor4"><img src="/img/collective/uzor4.png" alt="uzor4"></div>
+                    <div class="block-collectiv__img block-collectiv__img--yagoda11"><img src="/img/collective/yagoda11.png" alt="yagoda11"></div> -->
+                    <!-- <div class="block-collectiv__img block-collectiv__img--yagoda21"><img src="/img/collective/yagoda21.png" alt="yagoda21"></div> -->
+                </div>
+
+
+
+            </section>
+
+            <!-- ===========ACORDION====================== -->
+            <section class="section section__acordion">
+                <div class="acordion-menu">
+                    <h2 class="title">Меню</h2>
+                </div>
+                <div class="acordion-block">
+                    <ul class="acordion-list">
+                        <li class="acordion-item acordion-item__text--activ">
+                            <div class="acordion-item__img acordion-item__img--milk">
+
+                                <p>Батночики с молоком</p>
+                            </div>
+
+                            <div class="acordion-item__text">
+                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                                    вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
+                                    радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как
+                                    попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать –
+                                    никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
+                            </div>
+                        </li>
+                        <li class="acordion-item">
+                            <div class="acordion-item__img acordion-item__img--fruit">
+
+                                <p>С мёдом и фруктами</p>
+                            </div>
+                            <div class="acordion-item__text">
+                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                                    вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
+                                    радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как
+                                    попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать –
+                                    никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
+                            </div>
+                        </li>
+                        <li class="acordion-item">
+                            <div class="acordion-item__img acordion-item__img--berry">
+
+                                <p>Дикие ягоды</p>
+                            </div>
+                            <div class="acordion-item__text">
+                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                                    вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
+                                    радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как
+                                    попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать –
+                                    никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </section>
+            <!-- ========================================== Acordion the end=============================== -->
+
+
+
 
             <section class="section section__revuev">
                 <div class="container container__revuev">
+
                     <div class="title title--rev">
                         <h2>отзывы</h2>
                     </div>
@@ -232,11 +485,43 @@
                             <li class="rev__item"><img src="img/revuev/Masha.png" alt="masha"></li>
                         </ul>
                     </div>
+
                 </div>
 
             </section>
+            <section class="section section__work">
+                <div class="container container__work">
+                    <div class="block__video">
+                        <video controls src="vidio/001.mp4">
+
+
+                        </video>
+                    </div>
+                </div>
+                <div class="workmg1 worksmg">
+                    <img src="img/work/list1.png" alt="list1">
+                </div>
+                <div class="workmg2 worksmg">
+                    <img src="img/work/list21.png" alt="list21">
+                </div>
+
+                <div class="workmg3 worksmg">
+                    <img src="img/work/egevika1.png" alt="egevika1">
+                </div>
+
+                <div class="workmg4 worksmg">
+                    <img src="img/work/yagoda2.png" alt="yagoda2">
+                </div>
+
+            </section>
+
+            <!-- ==============FORM==================== -->
             <section class="section section__form">
                 <div class="container container__form">
+                    <div class="block-form__img block-form__img--yagoda"><img src="/img/form/yagodaF.png" alt="yagodaF">
+                    </div>
+                    <div class="block-form__img block-form__img--list31"><img src="/img/form/list31.png" alt="list31">
+                    </div>
 
                     <div class="title block-title__form">
                         <h2 class="title__form">закажите доставку</h2>
@@ -331,8 +616,58 @@
                     </form>
                 </div>
             </section>
+            <!-- ============================MAP=================================== -->
+            <section class="section section__map">
+                <div class="map" id="map"></div>
+            </section>
         </div>
+        <!-- ============================Footer================================ -->
+        <footer class="footer">
+            <div class="container__footer">
+                <div class="footer__text">
+                    <p>Москва, ул.Новый Арбат, д.31/12</p>
+                    <a href="tel:88009039090">
+                        <span>
+                            <svg class="phone-icon">
+                                <use xlink:href="img/sprit.svg#phone" />
+                            </svg>
+                        </span>
+                        <span>8 800 903 90 90</span>
+                    </a>
+
+                </div>
+                <div class="footer__icons">
+                    <ul class="footer__list">
+                        <li class="footer__item footer__item--vk">
+                            <svg class="footer__icon">
+                                <use xlink:href="img/sprit.svg#vk" />
+                            </svg>
+                        </li>
+                        <li class="footer__item footer__item--fb">
+                            <svg class="footer__icon">
+                                <use xlink:href="img/sprit.svg#fb" />
+                            </svg>
+                        </li>
+                        <li class="footer__item footer__item--ins">
+                            <svg class="footer__icon">
+                                <use xlink:href="img/sprit.svg#ins" />
+                            </svg>
+                        </li>
+                        <li class="footer__item footer__item--tw">
+                            <svg class="footer__icon">
+                                <use xlink:href="img/sprit.svg#tw" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+
+    <script src="js/map.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

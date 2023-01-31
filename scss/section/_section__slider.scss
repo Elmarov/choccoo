@@ -1,13 +1,255 @@
-.section__slider{
-    border:1px solid #000;
-    background: #F8FAF9;
-// z-index: 1;
+.section__slider {
+    // border: 1px solid #000;
+    background: #f8faf9;
+    // z-index: 1;
 }
 
-.container__slider{
-    border:1px solid blue;
+.container__slider {
+    // border: 1px solid blue;
     flex-direction: row;
+    justify-content: space-between;
 }
-.block-content__slider{
+.block-content__slider {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+    @include tablets{
+flex-direction: column;
+    }
+
+    .leaf {
+        position: absolute;
+        // width: 13px;
+        // height: 27px;
+    }
+    .leaf1 {
+        top: 236px;
+        left: -85px;
+
+        @include tablets{
+            top: 47px;
+            left: 114px;
+        }
+    }
+    .leaf2 {
+        bottom: 137px;
+        left: 285px;
+
+        @include tablets{
+            bottom: 355px;
+            left: 355px;
+        }
+    }
+}
+.block__slider {
+    width: 50%;
+}
+
+.block__slider-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    padding-right: 26px;
+    position: relative;
+
+
+    @include tablets {
+        width: 100%;
+        padding: 0;
+    }
+}
+.slider-text__composition {
+    margin-top: 66px;
+    display: flex;
+    position: relative;
+
+    @include tablets {
+        display: none;
+    }
+}
+.box__icon {
+    width: 91px;
+    height: 91px;
+    background: #86c3d7;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // text-align: center;
+    padding-top: 12px;
+
+    span {
+        font-family: "Alegreya Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14.0121px;
+        line-height: 17px;
+        color: #fff;
+    }
+}
+.bar-icon {
+    width: 46px;
+    height: 46px;
+    fill: #fff;
+}
+.slider-text__title {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #292929;
+    margin-top: 23px;
+
+    @include tablets{
+        text-align: center;
+    }
+}
+.slider-text__subtitle {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #666666;
+    margin-top: 23px;
+z-index: 30;
+    @include tablets{
+        margin-top: 14px;
+        text-align: center;
+    }
+}
+.box-text {
+}
+.box-caloric {
+    margin-top: 23px;
+    display: flex;
+
+    @include tablets{
+       
+        justify-content: center;
+    }
+}
+.box-caloric__calor {
+    display: flex;
+    flex-direction: column;
+    margin-right: 44px;
+}
+.box-caloric__mas {
+    display: flex;
+    flex-direction: column;
+}
+.box-price {
+    display: flex;
+    margin-top: 23px;
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+.box-price__sum {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 60px;
+    color: #151515;
+    margin-right: 40px;
+}
+.box-price__btn {
+}
+
+.btn__slider--green {
+    background: #0b4d3c;
+    color: #ffffff;
+
+    &:hover {
+        color: #0b4d3c;
+        background: #fff;
+    }
+}
+
+.block-arrow {
+    // width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // height: 40px;
+}
+.arrow {
+    width: 25px;
+    height: 27px;
+    // background-color:transparent;
+
+    &:hover{
+        fill: aqua;
+    }
+}
+.block-arrow__left {
+    margin-right: 59px;
+    position: relative;
+    @include tablets{
+        margin: 0;
+    }
+}
+.block-arrow__right {
+    position: relative;
+}
+.block-arrow__img {
+    height: 40px;
+    width: 24px;
+}
+span b {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.composition-list {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 4px;
+    padding: 30px;
+    position: absolute;
+    left: 92px;
+    display: none;
+    height: 0;
+    overflow: hidden;
+}
+.composition-item {
+    display: flex;
+    margin-bottom: 28px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.composition__icon {
+    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    &:hover {
+        fill: purple;
+    }
+}
+.composition__title {
+    margin-right: 30px;
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 500;
+    // font-size: 16px;
+    // line-height: 24px;
 }

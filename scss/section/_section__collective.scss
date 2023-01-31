@@ -1,0 +1,181 @@
+.section__collective {
+    display: flex;
+    align-items: center;
+}
+.container__collective {
+    // margin: 0;
+}
+
+.title--collective {
+    // border: 1px solid red;
+    text-align: center;
+    margin-top: 68px;
+    margin-bottom: 53px;
+    padding: 0;
+
+    @include tablets{
+        margin: 0;
+        margin-top: 173px;
+        margin-bottom: 33px;
+    }
+}
+.blocks-avotar {
+    // border: 1px solid blue;
+    height: 100%;
+
+  
+}
+.list-avotar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 12;
+
+    @include tablets{
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+}
+.list-avotar__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-right: 20px;
+    transition: all 5s ease-in-out;
+
+    @include tablets{
+        margin: 0;
+        margin-bottom: 16px;
+        flex:0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.block-avotar__text {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.block-avotar {
+    margin-bottom: 21px;
+
+    @include tablets{
+        margin: 0;
+        height: 0;
+        // overflow: hidden;
+        visibility: hidden;
+    }
+}
+.avotar-name {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    transition: 4s;
+    &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.8px 4.5px 0 4.5px;
+        border-color: #365a49 transparent transparent transparent;
+        position: relative;
+        left: 4px;
+    }
+
+    &:hover ~ .avotar__box-text {
+        height: auto;
+        visibility: visible;
+        overflow: visible;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        &:after {
+            transform: rotate(-180deg);
+        }
+    }
+}
+.avotar__box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    transition: all 0.9s ease-in-out;
+}
+.avotar-title {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #292929;
+    margin-bottom: 4px;
+}
+.avotar-subtitle {
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #666666;
+    p {
+        text-align: center;
+    }
+}
+.block-collectiv__img {
+    position: absolute;
+    img {
+        max-width: 100%;
+    }
+
+    &--uzor4 {
+        width: 196px;
+        right: 0;
+        top: -198px;
+    }
+    &--yagoda11 {
+        width: 135px;
+        right: 0;
+        top: -25px;
+    }
+    &--yagoda21 {
+        width: 104px;
+        left: 35px;
+        bottom: -45px;
+        z-index: 20;
+    }
+}
+.list-avotar__item--activ{
+
+
+    // .block-avotar{
+    //     height:auto;
+    //     visibility: visible;
+    //     order: 1;
+    // }
+    // .avotar__box-text{
+//         order:1;
+// height: auto;
+// visibility: visible;
+
+    // }
+}

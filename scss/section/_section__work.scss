@@ -1,0 +1,44 @@
+.section__work {
+    position: relative;
+    background: #F8FAF9;
+}
+.container__work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block__video {
+    width: 60%;
+    height: 40%;
+    video {
+        width: 100%;
+    }
+}
+.worksmg {
+    img {
+        max-width: 100%;
+    }
+}
+.workmg1 {
+    position: absolute;
+    left: 15%;
+    bottom: 3%;
+}
+.workmg2 {
+    position: absolute;
+    top: 81px;
+    right: 101px;
+}
+
+.workmg3 {
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    z-index: 30;
+}
+
+.workmg4 {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}

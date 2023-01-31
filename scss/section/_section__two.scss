@@ -2,45 +2,58 @@
     background: #fff;
     height: 100vh;
 
-    &:after{
+    &:after {
         position: absolute;
         content: url("../img/two/malina.png");
-        bottom: -120px;
+        bottom: -140px;
         left: 0;
         z-index: 10;
+
+        @include phones{
+            content:"";
+        }
     }
-    &:before{
+    &:before {
         position: absolute;
         content: url("../img/two/liav.svg");
         left: 0;
         top: 30%;
+        @include tablets {
+            // top: 20%;
+            content:"";
+        }
     }
 }
 .container--two {
     // border: 1px solid red;
     // justify-content: space-around;
     padding-top: 102px;
+
+    @include phones {
+        padding-top: 52px;
+    }
 }
 
 .block-title {
-    // position: relative;
-    top: 102px;
-    // border:1px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 49px;
 
+    @include phones{
+        margin-bottom: 62px;
+    }
+    .title {
+        padding-bottom: 19px;
+
+
+        @include phones{
+            padding-bottom: 12px;
+        }
+    }
+    z-index: 70;
 }
-.title {
-    text-transform: uppercase;
-    font-family: "Alegreya Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    padding-bottom: 19px;
-}
+
 .subtitle {
     width: 47%;
     font-family: "Alegreya Sans";
@@ -52,21 +65,44 @@
 
     text-align: center;
 
-    span {
-        text-align: center;
+    // span {
+    //     text-align: center;
+    // }
+    @include tablets {
+        width: 85%;
+        line-height: 22px;
+    }
+    @include phones {
+        width: 90%;
+        font-size: 18px;
+        line-height: 20px;
     }
 }
-// .block-promo {
+.block-promo {
     // border: 1px solid yellow;
-// }
+    z-index: 70;
+}
 .list__promo {
     display: flex;
     // border: 1px solid rgb(25, 149, 100);
+
+    @include phones{
+        flex-direction: column;
+        padding-bottom: 54px;
+    }
 }
 .item__promo {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include phones{
+        flex-direction: row;
+        padding: 0px 11px;
+        margin-bottom: 30px;
+    }
+
+  
 }
 .promo__img {
     width: 128px;
@@ -77,7 +113,20 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+
+    @include phones{
+        margin: 0;
+        background: none;
+        margin-right: 43px;
+    }
 }
+.two-icon {
+    width: 64px;
+    height: 53px;
+}
+// .promo-text{
+
+// }
 .promo__title {
     font-family: "Alegreya Sans";
     font-style: normal;
@@ -86,6 +135,14 @@
     line-height: 32px;
     color: #292929;
     margin-bottom: 27px;
+text-align: center;
+    @include phones{
+        margin-bottom: 14px;
+    }
+
+    @include phones{
+        text-align: start;
+    }
 }
 .promo__subtitle p {
     font-family: "Alegreya Sans";
@@ -95,4 +152,8 @@
     line-height: 22px;
     color: #666666;
     text-align: center;
+
+    @include phones{
+        text-align: start;
+    }
 }
