@@ -3,7 +3,6 @@
     // z-index: 1;
 
     &:after {
-       
         display: block;
         content: url("../img/slider/layer-bar1 1.png");
         position: absolute;
@@ -152,7 +151,7 @@
     }
 }
 .box-text {
-    width: 50%;
+    width: 91%;
 
     @include tablets {
         width: 72%;
@@ -236,6 +235,9 @@
             bottom: 107px;
             left: 150px;
         }
+
+        @include phones {
+        }
     }
 }
 
@@ -266,7 +268,7 @@ span b {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(20px);
-    /* Note: backdrop-filter has minimal browser support */
+    
 
     border-radius: 4px;
     padding: 30px;

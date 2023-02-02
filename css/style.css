@@ -911,7 +911,7 @@ nav {
 }
 
 .box-text {
-  width: 50%;
+  width: 91%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1066,7 +1066,6 @@ span b {
           box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 4px;
   padding: 30px;
   position: absolute;
@@ -1474,6 +1473,12 @@ span b {
   right: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .section__revuev:after {
+    display: none;
+  }
+}
+
 .section__revuev:before {
   position: absolute;
   content: url("../img/revuev/uzorrevu.svg");
@@ -1492,10 +1497,22 @@ span b {
   bottom: 35%;
 }
 
+@media screen and (max-width: 768px) {
+  .container__revuev:after {
+    bottom: 40%;
+  }
+}
+
 .title--rev {
   text-align: center;
   margin-top: 62px;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .title--rev {
+    margin-bottom: 89px;
+  }
 }
 
 .block-rev {
@@ -1522,11 +1539,30 @@ span b {
   top: -65px;
 }
 
+@media screen and (max-width: 768px) {
+  .block-rev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .rev-img {
   display: block;
   height: auto;
   max-width: 253px;
   margin-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .rev-img {
+    width: 130px;
+    margin: 0 0 32px 0;
+  }
 }
 
 .rev-text {
@@ -1535,12 +1571,25 @@ span b {
   padding-right: 5px;
 }
 
+@media screen and (max-width: 768px) {
+  .rev-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .rev-text__title {
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
   line-height: 32px;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .rev-text__title {
+    margin-bottom: 16px;
+  }
 }
 
 .rev-text__subtile {
@@ -1552,6 +1601,12 @@ span b {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  .rev-text__subtile {
+    margin-bottom: 16px;
+  }
+}
+
 .rev-text__name {
   font-style: normal;
   font-weight: 500;
@@ -1559,9 +1614,22 @@ span b {
   line-height: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .rev-text__name {
+    margin: 0 0 53px 0;
+    margin-bottom: 53px;
+  }
+}
+
 .rev__block-img {
   display: block;
   margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .rev__block-img {
+    margin: 0;
+  }
 }
 
 .rev__list {
