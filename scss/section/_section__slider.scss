@@ -41,7 +41,7 @@
         left: -85px;
 
         @include tablets {
-            top: 193px;
+            top: 154px;
             left: 163px;
         }
     }
@@ -50,7 +50,7 @@
         left: 285px;
 
         @include tablets {
-            bottom: 338px;
+            bottom: 226px;
             left: 445px;
         }
     }
@@ -169,11 +169,13 @@
 .box-caloric__calor {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-right: 44px;
 }
 .box-caloric__mas {
     display: flex;
     flex-direction: column;
+    align-items: start;
 }
 .box-price {
     display: flex;
@@ -232,8 +234,8 @@
 
     .block-arrow__img {
         @include tablets {
-            bottom: 107px;
-            left: 150px;
+            bottom: 68px;
+            left: 142px;
         }
 
         @include phones {
@@ -247,8 +249,8 @@
     .block-arrow__img {
         position: relative;
         @include tablets {
-            right: 132px;
-            bottom: 107px;
+            right: 139px;
+            bottom: 68px;
         }
     }
 }

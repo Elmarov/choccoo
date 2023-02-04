@@ -33,8 +33,6 @@ input {
         text-transform: uppercase;
         color: #365a49;
     }
-
-  
 }
 .form {
     // border: 1px solid purple;
@@ -46,6 +44,11 @@ input {
     font-size: 18px;
     line-height: 22px;
     column-gap: 27px;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .form__left {
@@ -54,11 +57,20 @@ input {
     display: flex;
     flex-wrap: wrap;
     // row-gap: 14px;
+
+    @include tablets {
+        width: 63%;
+        margin-bottom: 19px;
+    }
 }
 
-.form__right {
+.form .form__right {
     width: 50%;
     // border: 1px solid blue;
+
+    @include tablets {
+        width: 63%;
+    }
 }
 .form__title {
     margin-bottom: 2px;
@@ -94,12 +106,20 @@ input {
         width: 100%;
         height: 152px;
         border-radius: 4px;
-        border:none;
+        border: none;
         resize: none;
         &:focus {
             border-color: #dee2bd;
             outline: none;
         }
+        @include tablets{
+            height: 82px;
+            // margin-bottom: 15px;
+        }
+    }
+
+    @include tablets{
+        margin-bottom: 20px;
     }
 }
 .form__right-radio {
@@ -149,10 +169,10 @@ input {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    &--checkbox{
+    &--checkbox {
         border-radius: 0;
 
-        &:before{
+        &:before {
             background: url("../img/form/g1.png") center no-repeat;
         }
     }
@@ -161,46 +181,53 @@ input {
     margin-bottom: 44px;
 }
 
-.radio__checkbox{
+.radio__checkbox {
     display: flex;
 }
+.form__right-btn{
+    display: flex;
+    justify-content: center;
+}
 
-.btn__form{
-    
-    &--gren{
+.btn__form {
+    &--gren {
         background: $darkGreen;
-        color:#ffffff;
+        color: #ffffff;
 
-        &:hover{
-            color:$darkGreen;
+        &:hover {
+            color: $darkGreen;
             background: #fff;
         }
     }
 
-    &--transperent{
+    &--transperent {
         background: transparent;
         color: #000;
-        &:hover{
+        &:hover {
             background: transparent;
-            color:$darkGreen;
+            color: $darkGreen;
         }
     }
 }
-.block-form__img{
+.block-form__img {
     position: absolute;
 
-    &--yagoda{
+    &--yagoda {
         width: 47px;
         bottom: 69px;
-       left: -24px;
+        left: -24px;
     }
-    &--list31{
+    &--list31 {
         width: 135px;
         bottom: 58px;
         right: -67px;
     }
-    img{
+    img {
         width: 100%;
     }
+
+    @include tablets {
+        display: none;
+    }
 }
-// 
+//

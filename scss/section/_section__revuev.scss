@@ -9,7 +9,9 @@
         right: 18px;
 
         @include tablets{
-            display: none;
+            // display: none;
+            width: 136px;
+            top: 0;right: 0;
         }
     }
     &:before {
@@ -30,21 +32,14 @@
         bottom: 35%;
 
         @include tablets{
-            bottom: 40%;
+            right: 2%;
+            bottom: 49%;
+        }
         }
     }
-    // &:after{
-    //     position: absolute;
-    //     content: url("../img/revuev/yagoda2.png");
-    //     left: -25%;
-    //     bottom: -60px;
-    // }
-}
 
-// .rev-yaga{
-//     background: url('../img/revuev/yagoda21.svg') center no-repeat;
-//     width: 18%;
-// }
+
+
 
 .title--rev {
     text-align: center;
@@ -53,6 +48,9 @@
 
     @include tablets{
         margin-bottom: 89px;
+        font-size: 33px;
+        margin-top: 102px;
+        margin-bottom: 43px;
     }
 }
 
@@ -89,7 +87,7 @@
 
     @include tablets{
         width: 130px;
-      margin: 0 0 32px 0;
+        margin: 47px 0 28px 0;
     }
 }
 .rev-text {
@@ -108,9 +106,14 @@
     font-size: 27px;
     line-height: 32px;
     margin-bottom: 12px;
+    padding-top: 40px;
 
     @include tablets{
         margin-bottom: 16px;
+    }
+    @include phones{
+        font-size: 27px;
+line-height: 32px;
     }
 }
 .rev-text__subtile {
@@ -122,7 +125,12 @@
     margin-bottom: 25px;
 
     @include tablets{
-        margin-bottom: 16px;
+        margin-bottom: 40px;
+    }
+
+    @include phones{
+        font-size: 18px;
+line-height: 22px;
     }
 }
 .rev-text__name {
@@ -133,7 +141,14 @@
 
     @include tablets{
         margin: 0 0 53px 0;
-        margin-bottom: 53px;
+      
+    }
+
+    @include phones{
+        font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
     }
 }
 
