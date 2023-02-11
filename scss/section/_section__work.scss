@@ -35,6 +35,11 @@
     right: 0;
     bottom: -100px;
     z-index: 30;
+
+    @include phones{
+        width: 20%;
+        bottom: -55px;
+    }
 }
 
 .workmg4 {

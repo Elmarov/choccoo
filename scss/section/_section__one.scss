@@ -1,5 +1,6 @@
 .section__one {
     background: url("../img/one/uzor-one-1.png") right bottom no-repeat;
+    background-size: 512px;
 
     background-color: #61c4d9;
     // height: 100vh;
@@ -9,9 +10,9 @@
         background-position-y: -155px;
     }
 
-    @include phones{
-        background-position-y: 4px;
-        background-size: 410px;
+    @include phones {
+        background-position-y: 62px;
+        background-size: 324px;
     }
 
     &:before {
@@ -52,9 +53,9 @@
     // line-height: 30px;
     // padding-top: 28px;
 }
-.header__logo {
-    // margin-right: 44px;
-}
+// .header__logo {
+// margin-right: 44px;
+// }
 nav {
     width: 100%;
 
@@ -82,7 +83,7 @@ nav {
     }
 }
 .header__phone {
-    padding-right: 25px;
+    // padding-right: 25px;
     font-size: 22px;
     line-height: 18px;
     @include tablets {
@@ -117,13 +118,12 @@ nav {
         background: none;
     }
 
-
     &::after {
         display: block;
         position: absolute;
         content: url("../img/one/list-one-1.png");
-        right: 13%;
-        bottom: 20%;
+        right: 8%;
+        bottom: 14%;
 
         @include tablets {
             display: none;
@@ -148,7 +148,7 @@ nav {
     font-size: 48px;
     width: 40%;
     // border: 1px solid pink;
-    margin-top: -30px;
+    // margin-top: -30px;
 
     @include tablets {
         width: 100%;
@@ -170,17 +170,24 @@ nav {
             background-image: url("../img/one/onebg.png");
             background-repeat: no-repeat;
             // min-width: 20%;
-            max-height: 45%;
+            // max-height: 45%;
             width: 374px;
-            height: 340px;
-            top: 0;
+            height: 372px;
+            top: -72px;
             background-size: contain;
             position: absolute;
 
-            @include phones{
-                top: 100px;
+            @include phones {
+                top: 104px;
+                width: 325.77px;
+                height: 338.72px;
             }
         }
+    }
+
+    @include phones {
+        // position: relative;
+        // top: 50px;
     }
 }
 .one__main-title {
@@ -192,10 +199,17 @@ nav {
     line-height: 58px;
     margin-bottom: 4px;
 
-    @include phones{
+    @include tablets {
+        position: relative;
+        left: 4px;
+    }
+
+    @include phones {
         font-weight: 700;
-font-size: 40px;
-line-height: 36px;
+        font-size: 40px;
+        line-height: 36px;
+        top: -30px;
+        left: 1px;
     }
 }
 .one__dest-title {
@@ -211,23 +225,37 @@ line-height: 36px;
         line-height: 24px;
         margin-bottom: 23px;
         top: 1px;
+        left: 8px;
     }
 
-    @include phones{
-        width: 80%;
+    @include phones {
+        width: 70%;
         font-size: 18px;
-line-height: 20px;
+        line-height: 20px;
+        top: -26px;
     }
 }
 .one-btn {
     position: relative;
-    top: 7px;
+    top: 12px;
+
+    @include tablets {
+        top: 3px;
+        left: -1px;
+    }
+
+    @include phones{
+        top: -22px;
+        left: 2px;
+        font-size: 19px;
+        line-height: 18px;
+    }
 }
 .one__icon {
     width: 50%;
     position: relative;
-    bottom: 29px;
-    left: 6px;
+    bottom: -5px;
+    left: -3px;
     // border: 1px solid pink;
     @include tablets {
         display: none;
@@ -278,8 +306,7 @@ line-height: 20px;
     display: none;
     flex-direction: column;
 
-
-    @include tablets{
+    @include tablets {
         display: flex;
     }
 }
@@ -290,4 +317,4 @@ line-height: 20px;
     margin-bottom: 5.5px;
     border-radius: 10px;
 }
-// 
+//

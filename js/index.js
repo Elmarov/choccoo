@@ -26,3 +26,8 @@ a.addEventListener('mouseout',function () {
 });
 
 console.log(a);
+
+const screenWidth = window.screen.width;
+const screenHeight = window.screen.height;
+
+console.log(screenWidth,screenHeight);

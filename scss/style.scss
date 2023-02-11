@@ -73,16 +73,16 @@ body {
 
 .section {
     position: relative;
-    min-height: 100%;
+
     width: 100%;
-    min-height: 650px;
+    height: 100vh;
     padding: 0 10px;
     // overflow: hidden;
 }
 .container {
     width: 100%;
     max-width: $widthContainer;
-    
+    height: 100%;
     min-height: 650px;
     // border: 1px solid #0000ff;
     margin: 0 auto;
@@ -140,4 +140,4 @@ body {
 @import "section/footer";
 @import "section/media";
 
-// 
+//

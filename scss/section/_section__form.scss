@@ -12,6 +12,10 @@ input {
     background-size: cover;
     padding-top: 62px;
     padding-bottom: 85px;
+
+    @include phones{
+        padding-top: 90px;
+    }
 }
 
 .container__form {
@@ -32,6 +36,11 @@ input {
         line-height: 58px;
         text-transform: uppercase;
         color: #365a49;
+
+        @include phones {
+            font-size: 40px;
+            line-height: 36px;
+        }
     }
 }
 .form {
@@ -62,6 +71,10 @@ input {
         width: 63%;
         margin-bottom: 19px;
     }
+
+    @include phones{
+        width: 100%;
+    }
 }
 
 .form .form__right {
@@ -70,6 +83,10 @@ input {
 
     @include tablets {
         width: 63%;
+    }
+
+    @include phones{
+        width: 100%;
     }
 }
 .form__title {
@@ -112,13 +129,13 @@ input {
             border-color: #dee2bd;
             outline: none;
         }
-        @include tablets{
+        @include tablets {
             height: 82px;
             // margin-bottom: 15px;
         }
     }
 
-    @include tablets{
+    @include tablets {
         margin-bottom: 20px;
     }
 }
@@ -134,6 +151,10 @@ input {
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    @include phones{
+        justify-content: center;
     }
 }
 
@@ -179,12 +200,18 @@ input {
 }
 .form__right-checkbox {
     margin-bottom: 44px;
+
+
+    @include phones{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    }
 }
 
 .radio__checkbox {
     display: flex;
 }
-.form__right-btn{
+.form__right-btn {
     display: flex;
     justify-content: center;
 }

@@ -24,16 +24,23 @@
 
 .container__revuev {
     position: relative;
+    
 
     &:after {
+        display: block;
         position: absolute;
         content: url("../img/revuev/yagoda21.svg");
         right: 0;
         bottom: 35%;
+        z-index: 0;
 
         @include tablets{
             right: 2%;
-            bottom: 49%;
+            bottom: 38%;
+        }
+
+        @include phones{
+            bottom: 38%;
         }
         }
     }

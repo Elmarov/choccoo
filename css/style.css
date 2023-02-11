@@ -56,15 +56,15 @@ body {
 
 .section {
   position: relative;
-  min-height: 100%;
   width: 100%;
-  min-height: 650px;
+  height: 100vh;
   padding: 0 10px;
 }
 
 .container {
   width: 100%;
   max-width: 940px;
+  height: 100%;
   min-height: 650px;
   margin: 0 auto;
   display: -webkit-box;
@@ -123,6 +123,7 @@ body {
 
 .section__one {
   background: url("../img/one/uzor-one-1.png") right bottom no-repeat;
+  background-size: 512px;
   background-color: #61c4d9;
   min-height: 650px;
 }
@@ -135,8 +136,8 @@ body {
 
 @media screen and (max-width: 480px) {
   .section__one {
-    background-position-y: 4px;
-    background-size: 410px;
+    background-position-y: 62px;
+    background-size: 324px;
   }
 }
 
@@ -220,7 +221,6 @@ nav {
 }
 
 .header__phone {
-  padding-right: 25px;
   font-size: 22px;
   line-height: 18px;
 }
@@ -279,8 +279,8 @@ nav {
   display: block;
   position: absolute;
   content: url("../img/one/list-one-1.png");
-  right: 13%;
-  bottom: 20%;
+  right: 8%;
+  bottom: 14%;
 }
 
 @media screen and (max-width: 768px) {
@@ -308,7 +308,6 @@ nav {
   font-family: "Alegreya Sans";
   font-size: 48px;
   width: 40%;
-  margin-top: -30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -340,10 +339,9 @@ nav {
     display: block;
     background-image: url("../img/one/onebg.png");
     background-repeat: no-repeat;
-    max-height: 45%;
     width: 374px;
-    height: 340px;
-    top: 0;
+    height: 372px;
+    top: -72px;
     background-size: contain;
     position: absolute;
   }
@@ -351,7 +349,9 @@ nav {
 
 @media screen and (max-width: 768px) and (max-width: 480px) {
   .one__title::before {
-    top: 100px;
+    top: 104px;
+    width: 325.77px;
+    height: 338.72px;
   }
 }
 
@@ -365,11 +365,20 @@ nav {
   margin-bottom: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .one__main-title {
+    position: relative;
+    left: 4px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .one__main-title {
     font-weight: 700;
     font-size: 40px;
     line-height: 36px;
+    top: -30px;
+    left: 1px;
   }
 }
 
@@ -389,27 +398,45 @@ nav {
     line-height: 24px;
     margin-bottom: 23px;
     top: 1px;
+    left: 8px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .one__dest-title {
-    width: 80%;
+    width: 70%;
     font-size: 18px;
     line-height: 20px;
+    top: -26px;
   }
 }
 
 .one-btn {
   position: relative;
-  top: 7px;
+  top: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .one-btn {
+    top: 3px;
+    left: -1px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .one-btn {
+    top: -22px;
+    left: 2px;
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .one__icon {
   width: 50%;
   position: relative;
-  bottom: 29px;
-  left: 6px;
+  bottom: -5px;
+  left: -3px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1152,6 +1179,9 @@ span b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -1501,16 +1531,24 @@ span b {
 }
 
 .container__revuev:after {
+  display: block;
   position: absolute;
   content: url("../img/revuev/yagoda21.svg");
   right: 0;
   bottom: 35%;
+  z-index: 0;
 }
 
 @media screen and (max-width: 768px) {
   .container__revuev:after {
     right: 2%;
-    bottom: 49%;
+    bottom: 38%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container__revuev:after {
+    bottom: 38%;
   }
 }
 
@@ -1757,6 +1795,13 @@ span b {
   z-index: 30;
 }
 
+@media screen and (max-width: 480px) {
+  .workmg3 {
+    width: 20%;
+    bottom: -55px;
+  }
+}
+
 .workmg4 {
   position: absolute;
   top: -100px;
@@ -1779,6 +1824,12 @@ input:hover {
   background-size: cover;
   padding-top: 62px;
   padding-bottom: 85px;
+}
+
+@media screen and (max-width: 480px) {
+  .section__form {
+    padding-top: 90px;
+  }
 }
 
 .container__form {
@@ -1806,6 +1857,13 @@ input:hover {
   line-height: 58px;
   text-transform: uppercase;
   color: #365a49;
+}
+
+@media screen and (max-width: 480px) {
+  .block-title__form .title__form {
+    font-size: 40px;
+    line-height: 36px;
+  }
 }
 
 .form {
@@ -1850,6 +1908,12 @@ input:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .form__left {
+    width: 100%;
+  }
+}
+
 .form .form__right {
   width: 50%;
 }
@@ -1857,6 +1921,12 @@ input:hover {
 @media screen and (max-width: 768px) {
   .form .form__right {
     width: 63%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form .form__right {
+    width: 100%;
   }
 }
 
@@ -1950,6 +2020,14 @@ input:hover {
   margin-right: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .form__right-radio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .radio__elem {
   display: none;
 }
@@ -1991,6 +2069,13 @@ input:hover {
 
 .form__right-checkbox {
   margin-bottom: 44px;
+}
+
+@media screen and (max-width: 480px) {
+  .form__right-checkbox {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
 }
 
 .radio__checkbox {
