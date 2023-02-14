@@ -9,8 +9,8 @@
         left: 0;
         z-index: 10;
 
-        @include phones{
-            content:"";
+        @include phones {
+            content: "";
         }
     }
     &:before {
@@ -20,7 +20,7 @@
         top: 30%;
         @include tablets {
             // top: 20%;
-            content:"";
+            content: "";
         }
     }
 }
@@ -37,27 +37,41 @@
 .block-title {
     display: flex;
     flex-direction: column;
-   
     text-align: center;
     margin-bottom: 49px;
-   
 
-    @include phones{
+    @include phones {
         margin-bottom: 62px;
     }
     .title {
-        padding-bottom: 19px;
-//  white-space: nowrap;
+        padding-bottom: 6px;
+        //  white-space: nowrap;
 
-        @include phones{
+        @include phones {
             padding-bottom: 12px;
-          
+
             text-align: center;
-            font-size: 27px;
-    line-height: 34px;
+            
         }
     }
     z-index: 70;
+}
+.title__two{
+    font-size: 48px;
+    line-height: 58px;
+
+
+    @include phones{
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+
+    @include phones{
+        
+font-size: 40px;
+line-height: 36px;
+    }
 }
 
 .subtitle {
@@ -75,7 +89,7 @@
     //     text-align: center;
     // }
     @include tablets {
-        width: 85%;
+        width: 60%;
         line-height: 20px;
     }
     @include phones {
@@ -92,7 +106,7 @@
     display: flex;
     // border: 1px solid rgb(25, 149, 100);
 
-    @include phones{
+    @include phones {
         flex-direction: column;
         padding-bottom: 54px;
     }
@@ -102,13 +116,11 @@
     flex-direction: column;
     align-items: center;
 
-    @include phones{
+    @include phones {
         flex-direction: row;
         padding: 0px 11px;
         margin-bottom: 30px;
     }
-
-  
 }
 .promo__img {
     width: 128px;
@@ -120,21 +132,24 @@
     justify-content: center;
     margin-bottom: 20px;
 
-    @include phones{
+    @include phones {
         margin: 0;
         background: none;
         margin-left: 24px;
-    margin-right: 45px;
-    width: 154px;
+        margin-right: 40px;
+        padding-bottom: 14px;
+        width: 154px;
     }
 }
 .two-icon {
-    width: 100%;
- 
+    // width: 100%;
+    width: 64px;
 }
-// .promo-text{
+.promo-text{
+    display: flex;
+    flex-direction: column;
 
-// }
+}
 .promo__title {
     font-family: "Alegreya Sans";
     font-style: normal;
@@ -142,13 +157,13 @@
     font-size: 27px;
     line-height: 32px;
     color: #292929;
-    margin-bottom: 27px;
-text-align: center;
-    @include phones{
+    margin-bottom: 8px;
+    text-align: center;
+    @include phones {
         margin-bottom: 14px;
     }
 
-    @include phones{
+    @include phones {
         text-align: start;
     }
 }
@@ -161,7 +176,7 @@ text-align: center;
     color: #666666;
     text-align: center;
 
-    @include phones{
+    @include phones {
         text-align: start;
     }
 }

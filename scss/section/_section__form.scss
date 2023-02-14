@@ -7,7 +7,7 @@ input {
     }
 }
 .section__form {
-    height: 100vh;
+    height: 100%;
     background: url("../img/form/bg.png") center no-repeat;
     background-size: cover;
     padding-top: 62px;
@@ -29,6 +29,10 @@ input {
     align-items: center;
     justify-content: center;
     margin-bottom: 38px;
+
+    @include tablets{
+        margin-bottom: 30px;
+    }
     //
     .title__form {
         font-weight: 700;
@@ -40,6 +44,7 @@ input {
         @include phones {
             font-size: 40px;
             line-height: 36px;
+            text-align: center;
         }
     }
 }
@@ -142,7 +147,7 @@ input {
 .form__right-radio {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
 
     .radio {
         display: flex;
@@ -154,7 +159,10 @@ input {
     }
 
     @include phones{
-        justify-content: center;
+        // justify-content: center;
+       gap: 3px;
+        // text-align: center;
+        margin-bottom: 3px;
     }
 }
 
@@ -199,11 +207,12 @@ input {
     }
 }
 .form__right-checkbox {
+    display: flex;
     margin-bottom: 44px;
 
 
     @include phones{
-    margin: 0 auto;
+   justify-content: center;
     margin-bottom: 40px;
     }
 }
