@@ -19,12 +19,21 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.slider-shop{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
 .block-content__slider {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: relative;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
 
     @include tablets {
         flex-direction: column;
@@ -55,6 +64,13 @@
         }
     }
 }
+.slider--activ {
+    // position: absolute;
+    visibility: visible;
+    opacity: 1;
+}
+
+
 .block__slider {
     width: 50%;
 
@@ -99,6 +115,14 @@
     align-items: center;
     // text-align: center;
     padding-top: 12px;
+
+    &:hover {
+        .composition-list {
+            display: block;
+            overflow: visible;
+            height: auto;
+        }
+    }
 
     span {
         font-family: "Alegreya Sans";
@@ -270,7 +294,6 @@ span b {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(20px);
-    
 
     border-radius: 4px;
     padding: 30px;

@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
 }
-.container__collective {
+// .container__collective {
    
-}
+// }
 
 .title--collective {
     // border: 1px solid red;
@@ -38,6 +38,7 @@
     @include tablets{
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         
     }
 }
@@ -165,7 +166,7 @@
         z-index: 20;
     }
 }
-.list-avotar__item--activ{
+// .list-avotar__item--activ{
 
 
     // .block-avotar{
@@ -179,5 +180,5 @@
 // visibility: visible;
 
     // }
-}
+// }
 // 

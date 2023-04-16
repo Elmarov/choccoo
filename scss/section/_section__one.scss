@@ -4,7 +4,7 @@
 
     background-color: #61c4d9;
     // height: 100vh;
-    min-height: 650px;
+    // min-height: 650px;
 
     @include tablets {
         background-position-y: -155px;
@@ -116,6 +116,7 @@ nav {
 
     @include tablets {
         background: none;
+        padding-bottom: 0;
     }
 
     &::after {
@@ -172,9 +173,9 @@ nav {
             background-repeat: no-repeat;
             // min-width: 20%;
             // max-height: 45%;
-            width: 374px;
-            height: 372px;
-            top: -72px;
+            width: 353.12px;
+            height: 367.16px;
+            top: 0;
             background-size: contain;
             position: absolute;
 
@@ -205,6 +206,7 @@ nav {
     @include tablets {
         position: relative;
         left: 4px;
+      
     }
 
     @include phones {

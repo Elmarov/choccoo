@@ -3,6 +3,9 @@
     background-size: cover;
     display: flex;
     flex-direction: row;
+    height: 100vh;
+    min-height: 650px;
+    padding: 0;
 }
 .acordion-block {
     display: block;
@@ -27,7 +30,7 @@
 .acordion-item {
     // border: 1px solid red;
     width: 99px;
-    height: 100%;
+    height: 100%; 
     display: flex;
     // position: absolute;
     // left:0;

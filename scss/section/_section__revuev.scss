@@ -71,6 +71,7 @@
 
 .block-rev {
     position: relative;
+    min-height: 348px;
     display: flex;
     background: url("../img/revuev/yagoda21.svg") top right no-repeat;
     background-size: 127px;
@@ -104,6 +105,16 @@
             overflow: visible;
         }
     }
+}
+
+.item-rev {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+}
+.item-rev--activ {
+    opacity: 1;
+    position: static;
 }
 .rev-img {
     display: block;
@@ -213,11 +224,14 @@
     }
 
     &:hover {
-        border: 4px solid $darkGreen;
+        border: 1px solid $darkGreen;
     }
 
     img {
         border-radius: 50%;
     }
+}
+.rev__item--activ {
+    border: 3px solid $darkGreen;
 }
 //

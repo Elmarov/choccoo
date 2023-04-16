@@ -1,0 +1,29 @@
+.mobail-nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    z-index: 100;
+}
+.mobail-nav nav{
+    display: block;
+    height: 100%;
+}
+
+.nav__list-mobail{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+
+
+
+    .nav__item{
+        margin: 0;
+    }
+}
