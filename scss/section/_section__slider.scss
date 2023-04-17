@@ -20,7 +20,7 @@
     justify-content: space-between;
 }
 
-.slider-shop{
+.slider-shop {
     display: block;
     position: relative;
     width: 100%;
@@ -69,7 +69,6 @@
     visibility: visible;
     opacity: 1;
 }
-
 
 .block__slider {
     width: 50%;
@@ -271,7 +270,7 @@
 
 .block-arrow__right {
     position: relative;
-    @include tablets{
+    @include tablets {
         right: 9%;
     }
 
@@ -281,7 +280,7 @@
             // right: 139px;
             bottom: 68px;
         }
-        @include phones{
+        @include phones {
             bottom: 100px;
         }
     }
