@@ -111,6 +111,12 @@
     display: flex;
     position: absolute;
     opacity: 0;
+
+    @include tablets{
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+    }
 }
 .item-rev--activ {
     opacity: 1;
@@ -203,6 +209,10 @@
     @include tablets {
         margin: 0;
     }
+
+    @include phones{
+        padding-bottom: 86px;
+    }
 }
 .rev__list {
     display: flex;
@@ -223,13 +233,15 @@
         margin-right: 0;
     }
 
-    &:hover {
-        border: 1px solid $darkGreen;
-    }
+    
 
     img {
         border-radius: 50%;
     }
+@include phones{
+    width: 64px;
+}
+
 }
 .rev__item--activ {
     border: 3px solid $darkGreen;
