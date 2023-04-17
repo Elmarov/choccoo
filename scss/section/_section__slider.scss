@@ -254,27 +254,35 @@
     position: relative;
     @include tablets {
         margin: 0;
+        left: 15%;
     }
 
     .block-arrow__img {
         @include tablets {
             bottom: 68px;
-            left: 142px;
+            // left: 142px;
         }
 
         @include phones {
+            bottom: 100px;
         }
     }
 }
 
 .block-arrow__right {
     position: relative;
+    @include tablets{
+        right: 9%;
+    }
 
     .block-arrow__img {
         position: relative;
         @include tablets {
-            right: 139px;
+            // right: 139px;
             bottom: 68px;
+        }
+        @include phones{
+            bottom: 100px;
         }
     }
 }

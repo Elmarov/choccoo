@@ -1,4 +1,4 @@
-.mobail-nav{
+.mobail-nav {
     display: none;
     position: fixed;
     top: 0;
@@ -8,12 +8,12 @@
     background: #000;
     z-index: 100;
 }
-.mobail-nav nav{
+.mobail-nav nav {
     display: block;
     height: 100%;
 }
 
-.nav__list-mobail{
+.nav__list-mobail {
     height: 100%;
     width: 100%;
     display: flex;
@@ -21,9 +21,20 @@
     align-items: center;
     color: aliceblue;
 
-
-
-    .nav__item{
+    .nav__item {
         margin: 0;
+        // font-family: "Alegreya Sans";
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: 36px;
+        // line-height: 72px;
+
+        .nav__link {
+            font-family: "Alegreya Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 72px;
+        }
     }
 }
