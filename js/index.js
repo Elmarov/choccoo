@@ -75,3 +75,71 @@ function fn10(a) {
 }
 
 // =======================================================================================================
+
+// =========================== slider состав ===============================
+
+function fn3() {
+
+    // let box = document.querySelector('.box__icon');
+    // let composition = document.querySelector('.composition-list');
+    // box.addEventListener('mouseover', function (e) {
+
+
+
+
+    //     composition.style.display = 'block';
+
+    //     composition.addEventListener('mouseover', function (e) {
+    //         composition.style.display = 'block';
+    //     })
+    // })
+
+    // box.addEventListener('mouseout', function () {
+
+
+    //     composition.style.display = 'none';
+    // })
+}
+
+fn3();
+
+//! ========================== comanda ============================
+
+function fn44() {
+
+
+    let avotar = document.querySelectorAll('.list-avotar__item');
+
+    for (let i = 0; i < avotar.length; i++) {
+        let elem = avotar[i];
+
+
+
+
+        elem.addEventListener('click', function (e) {
+
+            for (let k = 0; k < avotar.length; k++) {
+                let element = avotar[k];
+                element.classList.remove('list-avotar__item--activ');
+            }
+
+
+            this.classList.add('list-avotar__item--activ');
+            console.log(elem);
+
+
+
+        })
+
+
+        // console.log(elem);
+
+    }
+
+}
+
+fn44();
+
+$('.slider-shop').bxSlider({
+    pager:false
+});

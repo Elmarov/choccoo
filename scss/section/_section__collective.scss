@@ -3,7 +3,7 @@
     align-items: center;
 }
 // .container__collective {
-   
+
 // }
 
 .title--collective {
@@ -13,7 +13,7 @@
     margin-bottom: 53px;
     padding: 0;
 
-    @include tablets{
+    @include tablets {
         margin: 0;
         margin-top: 173px;
         margin-bottom: 33px;
@@ -22,8 +22,6 @@
 .blocks-avotar {
     // border: 1px solid blue;
     height: 100%;
-
-  
 }
 .list-avotar {
     width: 100%;
@@ -35,11 +33,11 @@
     position: relative;
     z-index: 12;
 
-    @include tablets{
+    @include tablets {
+        display: none;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        
     }
 }
 .list-avotar__item {
@@ -51,10 +49,10 @@
     margin-right: 20px;
     transition: all 5s ease-in-out;
 
-    @include tablets{
+    @include tablets {
         margin: 0;
         margin-bottom: 16px;
-        flex:0;
+        flex: 0;
     }
 
     &:last-child {
@@ -70,7 +68,7 @@
 .block-avotar {
     margin-bottom: 21px;
 
-    @include tablets{
+    @include tablets {
         margin: 0;
         height: 0;
         // overflow: hidden;
@@ -87,7 +85,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    transition: 4s;
+    transition: 0.1s;
     &:after {
         content: "";
         width: 0;
@@ -99,19 +97,15 @@
         left: 4px;
     }
 
-    &:hover ~ .avotar__box-text {
-        height: auto;
-        visibility: visible;
-        overflow: visible;
-        transition: all 0.4s;
-    }
-
-    &:hover {
-        &:after {
-            transform: rotate(-180deg);
-        }
-    }
+    // &:hover ~ .avotar__box-text {
+    //     height: auto;
+    //     visibility: visible;
+    //     overflow: visible;
+    //     transition: all 0.1s;
+    // }
 }
+
+// !================= скрываем ===================
 .avotar__box-text {
     display: flex;
     flex-direction: column;
@@ -121,8 +115,9 @@
     // overflow: hidden;
     visibility: hidden;
     height: 0;
-    transition: all 0.9s ease-in-out;
+    // transition: all 0.9s ease-in-out;
 }
+// ! ============================================================
 .avotar-title {
     font-family: "Alegreya Sans";
     font-style: normal;
@@ -166,19 +161,46 @@
         z-index: 20;
     }
 }
-// .list-avotar__item--activ{
+.list-avotar__item--activ {
+    .block-avotar {
+        height: auto;
+        visibility: visible;
+        // order: 1;
+    }
+    // transition: all 4s;
+    .avotar__box-text {
+        order: 1;
+        visibility: visible;
+        height: auto;
+    }
 
+    .avotar-name {
+        &:after {
+            transform: rotate(-180deg);
+        }
+    }
+}
 
-    // .block-avotar{
-    //     height:auto;
-    //     visibility: visible;
-    //     order: 1;
-    // }
-    // .avotar__box-text{
-//         order:1;
-// height: auto;
-// visibility: visible;
+.list-avotar__mobail {
+    display: none;
 
-    // }
-// }
-// 
+    @include tablets {
+        display: block;
+
+        .block-avotar__text {
+            visibility: visible;
+            height: auto;
+            // .block-avotar{
+            //     height: auto;
+            //     visibility: visible;
+            // }
+
+            .avotar-title {
+                margin-top: 20px;
+            }
+            .avotar-subtitle {
+                width: 65%;
+            }
+        }
+    }
+}
