@@ -13,7 +13,7 @@ input {
     padding-top: 62px;
     padding-bottom: 85px;
 
-    @include phones{
+    @include phones {
         padding-top: 90px;
     }
 }
@@ -30,7 +30,7 @@ input {
     justify-content: center;
     margin-bottom: 38px;
 
-    @include tablets{
+    @include tablets {
         margin-bottom: 30px;
     }
     //
@@ -77,7 +77,7 @@ input {
         margin-bottom: 19px;
     }
 
-    @include phones{
+    @include phones {
         width: 100%;
     }
 }
@@ -90,7 +90,7 @@ input {
         width: 63%;
     }
 
-    @include phones{
+    @include phones {
         width: 100%;
     }
 }
@@ -158,9 +158,9 @@ input {
         }
     }
 
-    @include phones{
+    @include phones {
         // justify-content: center;
-       gap: 3px;
+        gap: 3px;
         // text-align: center;
         margin-bottom: 3px;
     }
@@ -210,10 +210,9 @@ input {
     display: flex;
     margin-bottom: 44px;
 
-
-    @include phones{
-   justify-content: center;
-    margin-bottom: 40px;
+    @include phones {
+        justify-content: center;
+        margin-bottom: 40px;
     }
 }
 
@@ -267,3 +266,12 @@ input {
     }
 }
 //
+
+.modal.fancybox-content{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+

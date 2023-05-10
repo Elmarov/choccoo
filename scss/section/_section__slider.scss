@@ -24,7 +24,14 @@
     display: block;
     position: relative;
     width: 100%;
+
+  
 }
+.bx-wrapper{
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+        }
 
 .block-content__slider {
     display: flex;

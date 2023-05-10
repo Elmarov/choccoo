@@ -143,3 +143,23 @@ fn44();
 $('.slider-shop').bxSlider({
     pager:false
 });
+
+
+// ==============modal ===============
+
+$('.form').submit(e =>{
+
+    e.preventDefault();
+ 
+    $.ajax({
+        url:"https://webdev-api.loftschool.com/sendmail",
+        method: "post"
+    });
+    $.fancybox.open({
+
+      
+    })
+   
+    
+})
+

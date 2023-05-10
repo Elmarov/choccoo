@@ -7,8 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+
     <link rel="stylesheet" href="bxslider-4-4.2.12/dist/jquery.bxslider.css">
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://codepen.io/fancyapps/pen/Kxdwjj.css">
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -885,12 +898,46 @@
 
                             </div>
                             <div class="form__right-btn">
-                                <button type="submit" class="btn btn__form--gren">ЗАКАЗАТЬ</button>
+                                <button type="submit" class="btn btn__form--gren btn-primary" data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;">ЗАКАЗАТЬ</button>
                                 <button type="reset" class="btn btn__form--transperent">Очистить</button>
                             </div>
                         </div>
                     </form>
+
+
+                    <!-- <div style="display: none;max-width:600px;" id="trueModal">
+                        <h2>I'm a modal!</h2>
+                        <p>You can close me only by pressing custom button below.</p>
+                        <p>It would also be possible to prevent closing using `beforeClose` callback.</p>
+                        <p><button data-fancybox-close class="btn">Close me</button></p>
+                      </div> -->
+
+
+
+
+
+                    <!-- <div class="modal" id="modal">
+                        <div class="modal__container">
+                            <div class="modal__content">Сообщение отправленно</div>
+                            <div class="modal__button-container"><a href="#" class="btn"
+                                    data-fancybox-close>Закрыть</a></div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                    <!-- !============================== -->
+
+                    <!-- ============================!modal form ============================-->
+
+                    <!-- <div id="ex1" class="modal">
+                    <p>Thanks for clicking. That felt good.</p>
+                    <a href="#" rel="modal:close">Close</a>
+                  </div>
+                  <p><a href="#ex1" rel="modal:open">Open Modal</a></p> -->
                 </div>
+
             </section>
             <!-- ============================MAP=================================== -->
             <section class="section section__map">
@@ -956,10 +1003,43 @@
 
     </div>
 
-    <!-- <script src="js/jquery-3.6.4.min.js"></script> -->
+    <div style="display: none;max-width:600px;" id="trueModal" class="modal">
+        <h2>Cообщение отправлено</h2>
+        <!-- <p>You can close me only by pressing custom button below.</p>
+        <p>It would also be possible to prevent closing using `beforeClose` callback.</p> -->
+        <p><button data-fancybox-close class="btn btn__form--gren">Закрыть</button></p>
+      </div>
+    
+
+
+
+
+
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- =========== -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
+
+    <!--  ============================ =========  -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+
+    <!-- ======================== -->
     <script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+
 
     <script src="js/map.js"></script>
     <script src="js/index.js"></script>

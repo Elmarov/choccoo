@@ -670,6 +670,12 @@ nav {
   width: 100%;
 }
 
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
 .block-content__slider {
   display: flex;
   align-items: center;
@@ -1839,6 +1845,12 @@ input:hover {
   .block-form__img {
     display: none;
   }
+}
+
+.modal.fancybox-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
