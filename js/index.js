@@ -141,25 +141,95 @@ function fn44() {
 fn44();
 
 $('.slider-shop').bxSlider({
-    pager:false
+    pager: false
 });
 
 
 // ==============modal ===============
 
-$('.form').submit(e =>{
+$('.form').submit(e => {
 
     e.preventDefault();
- 
+    const form = $(e.currentTarget);
+    const name = form.find("[name='name']");
+    const phone = form.find("[name='phone']");
+    const comment = form.find("[name='comment']");
+
+
+
+    [name, phone, comment].forEach(field => {
+
+        if (field.val() === "") {
+            field.addClass("input-error");
+        }
+    })
+
     $.ajax({
-        url:"https://webdev-api.loftschool.com/sendmail",
+        url: "https://webdev-api.loftschool.com/sendmail",
         method: "post"
     });
+
     $.fancybox.open({
 
-      
+
     })
-   
-    
+
+
 })
 
+// ============== Acordion =============================
+
+
+
+function acordion() {
+
+
+    let acordion = document.querySelectorAll('.acordion-item');
+    let list = document.querySelector('.acordion-list');
+    let menu = document.querySelector('.acordion-menu');
+
+    // list.addEventListener('click',function (e) {
+
+
+
+
+
+    // });
+
+    // acordion.addEventListener('click',function (e) {
+    //     console.log(e.target);
+    // console.log(this);
+    // });
+
+    for (let i = 0; i < acordion.length; i++) {
+        let el = acordion[i];
+        el.classList.remove('acordion-item--activ');
+        el.addEventListener('click', function (e) {
+
+            for (let k = 0; k < acordion.length; k++) {
+                let element = acordion[k];
+                element.classList.remove('acordion-item--activ');
+            }
+
+
+            this.classList.add('acordion-item--activ');
+            let menu = document.querySelector('.acordion-menu');
+            let screenWidth = parseInt(window.screen.width);
+
+            if (screenWidth === 768) {
+
+                menu.style.display = 'none';
+
+            }
+            console.log(screenWidth)
+            // console.log(e.currentTarget);
+            // console.log(this);
+        })
+
+    }
+
+
+
+}
+
+acordion();

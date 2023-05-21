@@ -625,7 +625,7 @@
                 </div>
                 <div class="acordion-block">
                     <ul class="acordion-list">
-                        <li class="acordion-item ">
+                        <li class="acordion-item acordion-item--activ ">
                             <div class="acordion-item__img acordion-item__img--milk">
 
                                 <p>Батночики с молоком</p>
@@ -822,11 +822,11 @@
                             <div class="form__left-input">
                                 <label for="name" class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="name">
                                 </label>
                                 <label for="tel" class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="tel" class="form__input">
+                                    <input type="tel" class="form__input" name="phone">
                                 </label>
                             </div>
                             <div class="form__left-input">
@@ -861,7 +861,7 @@
                             <div class="form__right-textaria">
                                 <label for="coment">
                                     <div class="form__title">Комементарий</div>
-                                    <textarea type="text"></textarea>
+                                    <textarea type="text" name="comment"></textarea>
                                 </label>
 
                             </div>
@@ -898,7 +898,8 @@
 
                             </div>
                             <div class="form__right-btn">
-                                <button type="submit" class="btn btn__form--gren btn-primary" data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;">ЗАКАЗАТЬ</button>
+                                <button type="submit" class="btn btn__form--gren btn-primary" data-fancybox
+                                    data-src="#trueModal" data-modal="true" href="javascript:;">ЗАКАЗАТЬ</button>
                                 <button type="reset" class="btn btn__form--transperent">Очистить</button>
                             </div>
                         </div>
@@ -1008,8 +1009,8 @@
         <!-- <p>You can close me only by pressing custom button below.</p>
         <p>It would also be possible to prevent closing using `beforeClose` callback.</p> -->
         <p><button data-fancybox-close class="btn btn__form--gren">Закрыть</button></p>
-      </div>
-    
+    </div>
+
 
 
 

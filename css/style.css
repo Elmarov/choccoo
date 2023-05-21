@@ -1256,13 +1256,13 @@ span b {
   visibility: hidden;
 }
 
-.acordion-item__text--activ {
+.acordion-item--activ {
   display: flex;
   height: 100%;
   width: 100%;
   transition: all 0.8s;
 }
-.acordion-item__text--activ .acordion-item__text {
+.acordion-item--activ .acordion-item__text {
   height: auto;
   visibility: visible;
   font-family: "Alegreya Sans";

@@ -17,6 +17,11 @@
     padding-left: 84px;
     padding-right: 35px;
     color: #fff;
+
+    // @include tablets{
+    //     display: none;
+    // }
+
 }
 .acordion-list {
     // border: 1px solid blue;
@@ -75,7 +80,7 @@
     visibility: hidden;
 }
 
-.acordion-item__text--activ {
+.acordion-item--activ {
     display: flex;
     height: 100%;
     width: 100%;
