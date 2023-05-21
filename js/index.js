@@ -216,7 +216,7 @@ function acordion() {
             let menu = document.querySelector('.acordion-menu');
             let screenWidth = parseInt(window.screen.width);
 
-            if (screenWidth === 768) {
+            if (screenWidth <= 768) {
 
                 menu.style.display = 'none';
 
