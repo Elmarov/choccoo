@@ -221,6 +221,15 @@ function acordion() {
                 menu.style.display = 'none';
 
             }
+
+            if (screenWidth <= 480) {
+                let activ = document.querySelector('.acordion-item--activ');
+
+                activ.style.position = 'absolute';
+                activ.style.top = 0+'px';
+                activ.style.bottom = 0+'px';
+                activ.style.right= 0+'px';
+            }
             console.log(screenWidth)
             // console.log(e.currentTarget);
             // console.log(this);
